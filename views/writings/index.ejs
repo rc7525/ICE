@@ -1,0 +1,27 @@
+<% include ../partials/header %>
+        <!--This is the body of the landing page-->
+                <div class="row">  
+                    <div class="col-md-8">
+                        <!--<h1>Welcome To Josh Chacko's World of Creations!</h1>-->
+                        <!--<p>Enjoy my thoughts ... dreams .... & creations...  </p>-->
+                        <section>
+                            <video id="slider" autoplay muted loop>
+                                <source src="/image/ice-video-1.webm" type="video/mp4"> 
+                            </video>
+                            <ul class="navigation">
+                                <li onclick="videoUrl('/image/ice-video-1.webm')"> <img src="/image/ice-video-1-thump.png"></li>
+                                <li onclick="videoUrl('/image/ice-video-2.webm')"> <img src="/image/ice-video-2-thump.png"></li>
+                                <li onclick="videoUrl('/image/ice-video-3.webm')"> <img src="/image/ice-video-3-thump.png"></li>
+                            </ul>
+                        </section>
+                        <script type="text/javascript">
+                            function videoUrl(playIn){
+                                document.getElementById("slider").src = playIn;
+                            }
+                        </script>
+                    </div>  
+                </div>    <!--This is the end the landing page-->
+            </div>
+        </div> 
+
+<% include ../partials/footer %>
